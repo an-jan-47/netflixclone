@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url("Assests/images/netflix_bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px, 100vw);
+    height: 80vh;
+    position: relative;
+}
+
+.main .box {
+    background-color: black;
+    opacity: 0.7;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+
+.nav .signin {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 650;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 80px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav .signin:hover {
+    background-color: rgb(205, 0, 0);
+}
+
+.lang,
+.region,
+.type {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 650;
+    background-color: black;
+    color: white;
+    border-color: grey;
+    border-radius: 4px;
+    border-width: 0.2px;
+    width: 110px;
+    height: 32px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text {
+    font-family: "Martel Sans", sans-serif;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 2px;
+}
+
+.text> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.text> :nth-child(2) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.text> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text> :nth-child(4) {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.text .input .email {
+    background-color: black;
+    font-family: "Martel Sans";
+    width: 300px;
+    height: 45px;
+    color: white;
+    border-radius: 4px;
+    border-color: white;
+    border-width: 0.5px;
+    font-size: 15px;
+    padding: 3px 0px 0px 20px;
+}
+
+.text .input .getstarted {
+    background-color: red;
+    font-family: "Martel Sans";
+    width: 160px;
+    height: 50px;
+    color: white;
+    border-radius: 4px;
+    font-weight: 900;
+    font-size: 15px;
+    padding: 3px 0px 0px 10px;
+    text-align: center;
+}
+
+.text .input .getstarted:hover {
+    background-color: rgb(205, 0, 0);
+}
+
+.flex_box {
+    background-color: black;
+    height: 20vh;
+    display: flex;
+    color: white;
+    font-family: "Martel Sans";
+    flex-direction: column;
+    padding-left: 10vw;
+}
+
+.flex_box h1 {
+    font-size: 25px;
+}
+
+.cards {
+    background-color: black;
+    height: 40vh;
+    display: flex;
+    color: white;
+    font-family: "Martel Sans";
+    flex-direction: row;
+    padding-left: 11vw;
+}
+
+.cards .card_1 {
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-image: url("https://occ-0-6227-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSPpe3Tz1eBPcSTnJFlzbTdsC0tX_aTAcHEdJ_zjPFal5k32DZeFBSJDbRNvdPs_3kc8nKFCKlwtoAHNA0D9gzj6PXysCIm-Taan71b7nJOujCJuZ-WRKkHdCA_A09MR1M5qtpHDPhUIzavGH-cuH7MlF4Rh-nRerMnz6XcOosWoP7qSPhtIUF9rBkvXcIIGSfK_qUvSD76B3wnH1GQjNEJ49ayg7RF9Ycq7u1r5WlAJ1vJE1JU3vOhpCWl_jlNnWqGG_sVP6-MGx25-U_H1Tw8dx4igf4q8FTpbWPNFus1FJjChLZy2L58j7ooZ6vreV2uGNUCy0jyhNDIiUHov2pQ.webp?r=9db");
+    width: 190px;
+    height: 270px;
+    margin-right: 40px;
+}
+
+.cards .card_2 {
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-image: url(https://occ-0-6227-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUaVoqnf662MKTNSb-holVRXUmh7ErcW5WyXY7n-b70CmDoXoQuF50Nl2c4rt-U6EZzjn9BSudlXdRVo0Xkn8ngU-jrmBUih-Z19gkjuDkuwuQXm5JQRr3mQ-zzvo48SZFSofri4j--f0rc7FIaZvI7LzgXQFFREzdtvnk5TxmjP9KxeBSpdBhK0jfgURKPetEIW5-df0hAEkxMSKkelz8K9tTx_aZk9QeX0RyZVYuetmoV1rB825t2m2k7Ilz25NNtA_9qmPglCCRACkVhnfure6k5Uht1DdqYidantvMWkaV3jFpZrKHBWP1AblHeWty8dsnZJq8A0ap6jcVPRaTQ.webp?r=4ed);
+    width: 190px;
+    height: 270px;
+    margin-right: 40px;
+}
+
+.cards .card_3 {
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-image: url(https://occ-0-6227-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXuRiQpi8dw0stPF_F8gQ--kQqvgiIzJBbxfbUp-FwJAMcatzyQnksTgOuGeDHLPfQIbyZ78dY8JHdJzSHxnYntGM-bAXRutvp0b54WFAR2UMZcYB7sNAGVBPQzYURCkztzVRGxVhAkNx76XZrFhyi95Kg-DV0ja8nqLli1X93Kk52IZPsX-f80VbmchnKexsscSTWAFKYh7pK0cuAG1ulmu2xXMBS2GwLUJCmg2mYuYBFyU8BPsDz5m1esgnWtGPYa1q2XpWHAGKUxFBNf1_WrbeUml-QQbc1PjDi0f8oosYC1rzBkhqZC9q6yhtYN1_u14aakuqQfaYHfriP1ux4stO2fpHyBaKfBZtqACx0vSuMXWoSw.webp?r=c11);
+    width: 190px;
+    height: 270px;
+    margin-right: 40px;
+}
+
+.cards .card_4 {
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-image: url(https://occ-0-6227-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXL-CdqBIJpELXwtWQliB94tD9QIgJgwyIpkLwXRRfi-mGEIUgBd7KmQYRPDaqjNnW1QxKDc-GE2aSeu7dNpB37O1_WjM4r9nwmTR4BeQFr05x3Snudb08KLCl0guB8xy43xGmozNJaKBq8nfwk4V2Yai_rMYpZK-IWWhPmHQNzZWKWeNhyOWEBi3tXcFS50aXfeni3o8pedYDB2bAGVvpLRTD8toZG5zKLsrmpPNIRtCt6YSarGuZfzFkosDsrBS9vX2MoLAgH-r7IQmAfU735FCdOZdnt7mrjpSx5wm2QLub1NdEYXbVQJ-tE_fgkklKbUvCDGp1z3Vo7dX8b6p-A.webp?r=4bd);
+    width: 190px;
+    height: 270px;
+    margin-right: 40px;
+}
+
+.cards .card_5 {
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-image: url(https://occ-0-6227-3662.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRh-gv1FQdodOSeMDRsLwy4WESuMjUaflt5lJieY8l_XVXnoZuabtBVmGfyYgqj-spmMyW62FOxFK-YxssQ-z5dmMEoTSre0Kdx8E6y74dzKprPzKEsvlsZONM8rQ4EQk0TF2OLJtz-Bc_hnwSblBS0TvIw4Xik5Iyk.webp?r=e1d);
+    width: 190px;
+    height: 270px;
+    margin-right: 40px;
+}
+
+.cards .card_1:hover,
+.card_2:hover,
+.card_3:hover,
+.card_4:hover,
+.card_5:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.more {
+    background-color: black;
+    height: 12vh;
+    display: flex;
+    color: white;
+    font-family: "Martel Sans";
+    padding-left: 10vw;
+}
+
+.reasons {
+    background-color: black;
+    height: 80vh;
+    display: flex;
+    color: white;
+    font-family: "Martel Sans";
+    flex-direction: row;
+    padding-left: 10vw;
+
+}
+
+.reasons .card1 {
+    background: linear-gradient(149deg,
+            #192247 0%,
+            #210e17 96.86%);
+    backdrop-filter: blur(30px);
+    width: 270px;
+    height: 270px;
+    margin-right: 15px;
+    border-radius: 0.5rem;
+}
+
+.reasons .card1,
+.card2,
+.card3,
+.card4 .data {
+    display: flexbox;
+    font-size: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: white;
+    font-family: "Martel Sans";
+}
+
+.reasons .card1 .card2,
+.card3,
+.card4 .data h1 {
+    font-weight: 1000;
+}
+
+.reasons .card1,
+.data h2 {
+    color: rgb(198, 191, 191);
+    font-weight: 500;
+}
+
+.reasons .card2 {
+    background: linear-gradient(149deg,
+            #192247 0%,
+            #210e17 96.86%);
+    backdrop-filter: blur(30px);
+    width: 270px;
+    height: 270px;
+    margin-right: 15px;
+    border-radius: 0.5rem;
+}
+
+.reasons .card3 {
+    background: linear-gradient(149deg,
+            #192247 0%,
+            #210e17 96.86%);
+    backdrop-filter: blur(30px);
+    width: 270px;
+    height: 270px;
+    margin-right: 15px;
+    border-radius: 0.5rem;
+}
+
+.reasons .card4 {
+    background: linear-gradient(149deg,
+            #192247 0%,
+            #210e17 96.86%);
+    backdrop-filter: blur(30px);
+    width: 270px;
+    height: 270px;
+    margin-right: 15px;
+    border-radius: 0.5rem;
+
+}
